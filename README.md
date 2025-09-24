@@ -32,8 +32,8 @@ This repository hosts the complete codebase and assets for the **Potato Disease 
 ## How to Use  
 1. **Clone the Repository:**  
    ```bash  
-   git clone https://github.com/Pooja1236/Potatoes-Disease-Prediction.git  
-   cd Potato-Disease-Predictor  
+   git clone https://github.com/user-name/Potatoes-diseases-predictor.git  
+   cd Potatoes-diseases-predictor 
 2. **Install Dependencies:**
    Navigate to the api folder and install required libraries using:
    ```bash
