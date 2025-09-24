@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potato Disease Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Potato Disease Predictor</h1>
+        <p>Upload an image of a potato leaf to predict its health status.</p>
+        <form id="uploadForm">
+            <input type="file" id="fileInput" accept="image/*" required>
+            <button type="submit">Predict</button>
+        </form>
+
+        <div id="uploadedImage">
+            <h2>Uploaded Image</h2>
+            <img id="preview" src="" alt="Uploaded image will appear here" />
+        </div>
+
+        <div id="result">
+            <h2>Prediction Result</h2>
+            <p id="prediction">No prediction yet.</p>
+            <p id="confidence"></p>
+            <div id="analysis">
+                <p><strong>Gemini Analysis:</strong></p>
+                <div id="perplexity"></div>
+            </div>
+        </div>
+
+        <!-- Farmer Response Section -->
+        <div id="chatContainer" class="chat-container">
+            <h2>Follow-up Questions</h2>
+            <h3 id="questionCounter">Question 0/10</h3>
+            <div id="chatBox" class="chat-box">
+                <!-- Questions and answers will appear dynamically here -->
+            </div>
+            <div class="chat-input">
+                <textarea id="farmerResponse" placeholder="Type your answer..."></textarea>
+                <button id="submitResponse">Submit Answer</button>
+            </div>
+            <p id="responseStatus"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
