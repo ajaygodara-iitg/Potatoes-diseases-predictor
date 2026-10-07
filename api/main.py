@@ -15,7 +15,7 @@ import markdown
 # 1. Load Environment Variables & Configure Gemini
 # ----------------------------
 load_dotenv()
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY") or "AIzaSyDjvioK6SsJt-enjQAB5GXHvrNDFYHM0hj")
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY") or "")
 
 # ----------------------------
 # 2. Initialize FastAPI App
